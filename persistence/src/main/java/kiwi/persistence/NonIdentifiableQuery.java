@@ -9,16 +9,6 @@ import java.util.List;
  */
 public interface NonIdentifiableQuery<RESOURCE> {
   /**
-   * リソース名を取得します。
-   *
-   * <p>
-   * 例外メッセージ等で使用されます。
-   * 
-   * @return リソース名
-   */
-  String getResourceName();
-
-  /**
    * リソースの件数を取得します。
    * <p>
    * 0以上の値を返します。
