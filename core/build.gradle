@@ -1,5 +1,5 @@
 plugins {
-  id 'mazewands.library'
+  id 'kiwi.library'
 }
 
 dependencies {

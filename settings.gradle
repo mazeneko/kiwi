@@ -1,2 +1,2 @@
-rootProject.name = 'mazewands'
+rootProject.name = 'kiwi'
 include('core', 'persistence', 'web')
