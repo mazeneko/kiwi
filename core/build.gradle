@@ -2,6 +2,7 @@ plugins {
   id 'java-library'
   id 'maven-publish'
   alias(libs.plugins.git.version)
+  alias(libs.plugins.jreleaser)
 }
 
 repositories {
@@ -16,8 +17,9 @@ dependencies {
 
 java {
   toolchain {
-    languageVersion.set(JavaLanguageVersion.of(21))
+    languageVersion = JavaLanguageVersion.of(21)
   }
+  withJavadocJar()
   withSourcesJar()
 }
 
@@ -25,4 +27,71 @@ version = gitVersion()
 
 tasks.named('test') {
   useJUnitPlatform()
+}
+
+publishing {
+  repositories {
+    maven {
+      url = layout.buildDirectory.dir('staging-deploy')
+    }
+  }
+  publications {
+    maven(MavenPublication) {
+      groupId = 'io.github.mazeneko'
+      artifactId = 'kiwi'
+
+      from components.java
+
+      pom {
+        name = 'kiwi'
+        description = 'Application utilities'
+        url = 'https://github.com/mazeneko/kiwi'
+        inceptionYear = '2024'
+        licenses {
+          license {
+            name = 'Apache-2.0'
+            url = 'https://spdx.org/licenses/Apache-2.0.html'
+          }
+        }
+        developers {
+          developer {
+            id = 'mazeneko'
+            name = 'mazeneko'
+          }
+        }
+        scm {
+          connection = 'scm:git:https://github.com/mazeneko/kiwi.git'
+          developerConnection = 'scm:git:git@github.com:mazeneko/kiwi.git'
+          url = 'https://github.com/mazeneko/kiwi'
+        }
+      }
+    }
+  }
+}
+
+jreleaser {
+  gitRootSearch = true
+  signing {
+    active = 'ALWAYS'
+    armored = true
+  }
+  deploy {
+    maven {
+      mavenCentral {
+        sonatype {
+          active = 'ALWAYS'
+          url = 'https://central.sonatype.com/api/v1/publisher'
+          stagingRepository('build/staging-deploy')
+        }
+      }
+    }
+  }
+  release {
+    github {
+      tagName = '{{projectVersion}}'
+      prerelease {
+        pattern = '.*-.*'
+      }
+    }
+  }
 }
