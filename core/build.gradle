@@ -4,14 +4,3 @@ plugins {
 
 dependencies {
 }
-
-publishing {
-  publications {
-    gpr(MavenPublication) {
-      groupId = 'io.github.mazeneko'
-      artifactId = 'mazewands-core'
-      version = gitVersion()
-      from components.java
-    }
-  }
-}

@@ -26,21 +26,3 @@ dependencies {
 tasks.named('test') {
   useJUnitPlatform()
 }
-
-def secretsProperties = new Properties()
-def secretsPropertiesFile = project.rootProject.file('secrets.properties')
-if(secretsPropertiesFile.exists()){
-  secretsProperties.load(secretsPropertiesFile.newDataInputStream())
-}
-publishing {
-  repositories {
-    maven {
-      name = "GitHubPackages"
-      url = uri('https://maven.pkg.github.com/mazeneko/mazewands')
-      credentials {
-        username = secretsProperties.getProperty('gpr.user')
-        password = secretsProperties.getProperty('gpr.token')
-      }
-    }
-  }
-}
