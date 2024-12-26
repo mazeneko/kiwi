@@ -2,7 +2,17 @@
 
 これは Java でアプリケーションを作るときに便利なクラスライブラリです。
 
-## Features
+## 使い方
+
+### build.gradle
+
+```kt:
+dependencies {
+    implementation("io.github.mazeneko:kiwi:1.0.0")
+}
+```
+
+## 機能
 
 ### core
 
