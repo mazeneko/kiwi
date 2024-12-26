@@ -1,6 +1,6 @@
 [versions]
-junit-jupiter = "5.8.1"
-assertj = "3.25.3"
+junit-jupiter = "5.11.4"
+assertj = "3.27.0"
 git-version = "3.0.0"
 
 [libraries]
