@@ -28,6 +28,17 @@ public record Identifier<ID_RESOURCE>(UUID value) {
   }
 
   /**
+   * IDを作成します。
+   * 
+   * @param <R>   識別対象のクラス
+   * @param value UUIDの文字列
+   * @return 作成したID
+   */
+  public static <R> Identifier<R> fromString(String value) {
+    return new Identifier<>(UUID.fromString(value));
+  }
+
+  /**
    * ランダムUUIDでIDを生成します。
    * 
    * <p>
