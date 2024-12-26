@@ -1,3 +1,14 @@
 {
-  "java.configuration.updateBuildConfiguration": "automatic"
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "args": [
+        "-NoExit",
+        "-Command",
+        "chcp 65001; $env:JAVA_TOOL_OPTIONS=\"-Dfile.encoding=UTF-8\""
+      ]
+    }
+  }
 }
