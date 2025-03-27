@@ -45,12 +45,6 @@ dependencies {
   - Signed
   - Timestamped
 
-### web
-
-- シンプルなレスポンスボディとして使える型
-  - SimpleResponse
-  - ContentsAttachedResponse
-
 ## How to release
 
 1. バージョンのタグを付ける
