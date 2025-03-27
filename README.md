@@ -41,6 +41,12 @@ dependencies {
   - SingleResourceCommand
   - ResourceGettingResult
   - ResourcesGettingResult
+- リソ－スが ID と別で自然キーを持つ場合に便利なインターフェース
+  - NaturalKeyIdentifiable
+  - NaturalKeyQuery
+  - NaturalKeyCommand
+  - NaturalKeyResourceGettingResult
+  - NaturalKeyResourcesGettingResult
 - リソースを操作したユーザーや時刻を扱うためのインターフェース
   - Signed
   - Timestamped
