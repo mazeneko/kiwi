@@ -8,7 +8,7 @@
 
 ```kt:
 dependencies {
-    implementation("io.github.mazeneko:kiwi:1.0.0")
+    implementation("io.github.mazeneko:kiwi:2.0.0")
 }
 ```
 
