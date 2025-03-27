@@ -26,6 +26,9 @@ dependencies {
 - かなや全銀フォーマットのためのユーティリティ
   - KanaConverter
   - ZenginFormatConverter
+- テキスト操作のためのユーティリティ
+  - TextPicker
+  - TextPutter
 
 ### persistence
 
