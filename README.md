@@ -23,6 +23,9 @@ dependencies {
 - 連番を生成するユーティリティ
   - SequenceIntSupplier
   - SequenceLongSupplier
+- かなや全銀フォーマットのためのユーティリティ
+  - KanaConverter
+  - ZenginFormatConverter
 
 ### persistence
 

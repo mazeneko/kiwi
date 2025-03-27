@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+  implementation libs.icu4j
   testImplementation libs.junit.jupiter
   testImplementation libs.assertj
   testRuntimeOnly 'org.junit.platform:junit-platform-launcher'

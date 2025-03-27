@@ -4,7 +4,10 @@ dictionaryDefinitions: []
 dictionaries: []
 words:
   - assertj
+  - Fullwidth
+  - Halfwidth
   - jreleaser
   - mazeneko
+  - Zengin
 ignoreWords: []
 import: []
