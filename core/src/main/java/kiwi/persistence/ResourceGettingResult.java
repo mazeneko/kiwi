@@ -3,6 +3,8 @@ package kiwi.persistence;
 import java.util.Optional;
 import java.util.function.Function;
 
+import kiwi.core.identify.AnyKeyIdentifiable;
+
 /**
  * リソースの取得結果
  */

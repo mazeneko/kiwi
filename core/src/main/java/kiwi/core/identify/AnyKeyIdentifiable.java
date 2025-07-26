@@ -1,4 +1,4 @@
-package kiwi.persistence;
+package kiwi.core.identify;
 
 /**
  * 任意の型のIDで一意に識別可能なオブジェクトであることを表します。

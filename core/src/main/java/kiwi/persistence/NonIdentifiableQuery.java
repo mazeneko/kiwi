@@ -3,7 +3,7 @@ package kiwi.persistence;
 import java.util.List;
 
 /**
- * 識別不能なリソースのQueryです。
+ * 識別不能なリソースで使用できるCQSやCQRSのQueryです。
  * 
  * @param <RESOURCE> リソースの型
  */

@@ -1,16 +1,18 @@
-package kiwi.persistence;
+package kiwi.persistence.cqs;
 
 import java.util.List;
+
+import kiwi.core.identify.NaturalKeyIdentifiable;
 
 /**
  * 自然キーで使用できるCQSのCommandです。
  * <p>
- * {@link Command}や{@link AnyKeyCommand}の補助として便利に使うことができます。
+ * {@link CqsCommand}や{@link AnyKeyCqsCommand}の補助として便利に使うことができます。
  * 
  * @param <NATURAL_KEY> 自然キーの型
  * @param <RESOURCE>    リソースの型
  */
-public interface NaturalKeyCommand<NATURAL_KEY, RESOURCE extends NaturalKeyIdentifiable<NATURAL_KEY>> {
+public interface NaturalKeyCqsCommand<NATURAL_KEY, RESOURCE extends NaturalKeyIdentifiable<NATURAL_KEY>> {
   /**
    * リソースを削除します。
    * 

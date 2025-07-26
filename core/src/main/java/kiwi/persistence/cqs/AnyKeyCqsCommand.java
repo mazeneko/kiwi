@@ -1,6 +1,8 @@
-package kiwi.persistence;
+package kiwi.persistence.cqs;
 
 import java.util.List;
+
+import kiwi.core.identify.AnyKeyIdentifiable;
 
 /**
  * 任意の型のIDで使用できるCQSのCommandです。
@@ -8,7 +10,7 @@ import java.util.List;
  * @param <ID>       IDの型
  * @param <RESOURCE> リソースの型
  */
-public interface AnyKeyCommand<ID, RESOURCE extends AnyKeyIdentifiable<ID>> {
+public interface AnyKeyCqsCommand<ID, RESOURCE extends AnyKeyIdentifiable<ID>> {
   /**
    * リソースを保存します。
    * 

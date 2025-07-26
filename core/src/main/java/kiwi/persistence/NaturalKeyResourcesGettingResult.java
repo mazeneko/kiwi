@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Stream;
 
+import kiwi.core.identify.NaturalKeyIdentifiable;
+
 /**
  * リソースの取得結果
  */

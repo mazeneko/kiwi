@@ -1,16 +1,16 @@
-package kiwi.persistence;
+package kiwi.persistence.cqs;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
 /**
- * 識別不能なリソースのCommandです。
+ * 識別不能なリソースで使用できるCQSのCommandです。
  * 
  * @param <RESOURCE> リソースの型
  */
 
-public interface NonIdentifiableCommand<RESOURCE> {
+public interface NonIdentifiableCqsCommand<RESOURCE> {
   /**
    * リソースを保存します。
    * 

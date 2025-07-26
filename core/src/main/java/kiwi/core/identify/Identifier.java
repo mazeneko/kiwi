@@ -1,4 +1,4 @@
-package kiwi.persistence;
+package kiwi.core.identify;
 
 import java.util.Objects;
 import java.util.UUID;
