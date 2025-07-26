@@ -3,7 +3,7 @@ package kiwi.persistence;
 import java.util.Optional;
 
 /**
- * 単一リソースのQueryです。
+ * 単一リソースで使用できるCQSやCQRSのQueryです。
  *
  * @param <RESOURCE> リソースの型
  */

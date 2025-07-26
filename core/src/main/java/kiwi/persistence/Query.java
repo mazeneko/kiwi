@@ -4,7 +4,7 @@ import kiwi.core.identify.Identifiable;
 import kiwi.core.identify.Identifier;
 
 /**
- * CQSのQueryです。
+ * CQSやCQRSのQueryです。
  *
  * @param <ID_RESOURCE> IDとするリソースの型
  * @param <RESOURCE>    リソースの型

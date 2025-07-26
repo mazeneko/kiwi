@@ -8,7 +8,7 @@ import java.util.List;
 import kiwi.core.identify.NaturalKeyIdentifiable;
 
 /**
- * 自然キーで使用できるCQSのQueryです。
+ * 自然キーで使用できるCQSやCQRSのQueryです。
  * 
  * @param <NATURAL_KEY> 自然キーの型
  * @param <RESOURCE>    リソースの型
