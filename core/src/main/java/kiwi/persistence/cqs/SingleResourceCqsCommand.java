@@ -1,14 +1,11 @@
-package kiwi.persistence;
+package kiwi.persistence.cqs;
 
 /**
- * 単一リソースのCommandです。
+ * 単一リソースで使用できるCQSのCommandです。
  *
  * @param <RESOURCE> リソースの型
- * 
- * @deprecated {@link kiwi.persistence.cqs.SingleResourceCqsCommand}を使用してください。
  */
-@Deprecated
-public interface SingleResourceCommand<RESOURCE> {
+public interface SingleResourceCqsCommand<RESOURCE> {
   /**
    * リソースを保存します。
    * 
