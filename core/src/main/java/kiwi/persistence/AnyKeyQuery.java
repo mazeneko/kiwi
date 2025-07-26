@@ -5,6 +5,8 @@ import static java.util.stream.Collectors.toSet;
 
 import java.util.List;
 
+import kiwi.core.identify.AnyKeyIdentifiable;
+
 /**
  * 任意の型のIDで使用できるCQSのQueryです。
  * 

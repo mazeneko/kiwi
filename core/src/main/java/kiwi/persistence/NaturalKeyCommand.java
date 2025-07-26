@@ -2,6 +2,8 @@ package kiwi.persistence;
 
 import java.util.List;
 
+import kiwi.core.identify.NaturalKeyIdentifiable;
+
 /**
  * 自然キーで使用できるCQSのCommandです。
  * <p>

@@ -1,4 +1,4 @@
-package kiwi.persistence;
+package kiwi.core.identify;
 
 import java.util.Objects;
 import java.util.UUID;
@@ -10,10 +10,7 @@ import java.util.UUID;
  * 
  * <p>
  * IDの値にはUUIDが使われています。
- * 
- * @deprecated {@link kiwi.core.identify.Identifier}を使用してください。
  */
-@Deprecated
 public record Identifier<ID_RESOURCE>(UUID value) {
   public Identifier {
     Objects.requireNonNull(value);

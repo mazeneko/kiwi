@@ -1,4 +1,4 @@
-package kiwi.persistence;
+package kiwi.core.identify;
 
 /**
  * 自然キーで一意に識別可能なオブジェクトであることを表します。
@@ -6,10 +6,7 @@ package kiwi.persistence;
  * {@link Identifiable}や{@link AnyKeyIdentifiable}の補助として便利に使うことができます。
  * 
  * @param <NATURAL_KEY> 自然キーの型
- * 
- * @deprecated {@link kiwi.core.identify.NaturalKeyIdentifiable}を使用してください。
  */
-@Deprecated
 public interface NaturalKeyIdentifiable<NATURAL_KEY> {
   /**
    * 自然キーを取得します。

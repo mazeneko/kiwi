@@ -1,5 +1,8 @@
 package kiwi.persistence;
 
+import kiwi.core.identify.Identifiable;
+import kiwi.core.identify.Identifier;
+
 /**
  * CQSのQueryです。
  *

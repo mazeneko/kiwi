@@ -5,6 +5,8 @@ import static java.util.stream.Collectors.toSet;
 
 import java.util.List;
 
+import kiwi.core.identify.NaturalKeyIdentifiable;
+
 /**
  * 自然キーで使用できるCQSのQueryです。
  * 

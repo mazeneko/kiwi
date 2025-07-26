@@ -2,6 +2,8 @@ package kiwi.persistence;
 
 import java.util.List;
 
+import kiwi.core.identify.AnyKeyIdentifiable;
+
 /**
  * 任意の型のIDで使用できるCQSのCommandです。
  * 
