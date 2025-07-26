@@ -8,7 +8,7 @@
 
 ```kt:
 dependencies {
-    implementation("io.github.mazeneko:kiwi:2.0.0")
+    implementation("io.github.mazeneko:kiwi:3.0.0")
 }
 ```
 
@@ -16,10 +16,17 @@ dependencies {
 
 ### core
 
+- ID を扱う型やインターフェース
+  - Identifier
+  - Identifiable
+  - AnyKeyIdentifiable
+  - NaturalKeyIdentifiable
 - 生年月日を扱う型
   - BirthDate
 - 相互に変換できることを表すインターフェース
   - MutualConverter
+コレクション内の重複を扱えるユーティリティ
+  - Duplicates
 - 連番を生成するユーティリティ
   - SequenceIntSupplier
   - SequenceLongSupplier
@@ -32,30 +39,36 @@ dependencies {
 
 ### persistence
 
-- ID を扱う型やインターフェース
-  - Identifier
-  - Identifiable
-  - AnyKeyIdentifiable
-- リソースを読み書きする CQS のインターフェース
-  - Query
-  - Command
-  - AnyKeyQuery
-  - AnyKeyCommand
-  - NonIdentifiableQuery
-  - NonIdentifiableCommand
-  - SingleResourceQuery
-  - SingleResourceCommand
-  - ResourceGettingResult
-  - ResourcesGettingResult
-- リソ－スが ID と別で自然キーを持つ場合に便利なインターフェース
-  - NaturalKeyIdentifiable
-  - NaturalKeyQuery
-  - NaturalKeyCommand
-  - NaturalKeyResourceGettingResult
-  - NaturalKeyResourcesGettingResult
 - リソースを操作したユーザーや時刻を扱うためのインターフェース
   - Signed
   - Timestamped
+- リソースを読み込むインターフェース
+  - Query
+  - AnyKeyQuery
+  - NaturalKeyQuery
+  - NonIdentifiableQuery
+  - SingleResourceQuery
+  - ResourceGettingResult
+  - ResourcesGettingResult
+  - NaturalKeyResourceGettingResult
+  - NaturalKeyResourcesGettingResult
+- CQSのCommand
+  - CqsCommand
+  - AnyKeyCqsCommand
+  - NaturalKeyCqsCommand
+  - NonIdentifiableCqsCommand
+  - SingleResourceCqsCommand
+- CQRSのEventやAggregate
+  - Event
+  - EventCreationContext
+  - EventCreationContextFactory
+  - EventCreationMeta
+  - EventStore
+  - Aggregate
+  - AggregateEvent
+  - AggregateEventStore
+  - AggregateReplayer
+  - AggregateProjector
 
 ## How to release
 
