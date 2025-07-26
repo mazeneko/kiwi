@@ -1,9 +1,9 @@
 [versions]
 icu4j = "77.1"
-junit-jupiter = "5.11.4"
-assertj = "3.27.0"
-jreleaser = "1.15.0"
-git-version = "3.0.0"
+junit-jupiter = "5.13.4"
+assertj = "3.27.3"
+jreleaser = "1.19.0"
+git-version = "4.0.0"
 
 [libraries]
 icu4j = { module = "com.ibm.icu:icu4j", version.ref = "icu4j" }
